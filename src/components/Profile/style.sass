@@ -1,0 +1,61 @@
+.profile-container
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding: 15px
+
+  .profile-avatar-container
+    display: flex
+    margin: 0 5px
+    position: relative
+
+    &:hover
+      cursor: pointer
+      .profile-avatar-upload-container
+        display: flex
+        height: 100%
+        opacity: 1
+
+    .profile-avatar-upload-container
+      position: absolute
+      right: 0
+      height: 100%
+      transform: translate(100%, 0%)
+      display: none
+      flex-direction: column
+      flex-wrap: wrap
+      justify-content: center
+      opacity: 0
+
+      > div
+        margin: 5px 2px
+        &:hover
+          transform: scale(1.15) translate(0%, 0%)
+
+
+  .profile-name-container
+    display: flex
+    flex-direction: row
+    justify-content: center
+    position: relative
+    align-items: center
+    transition: all 0.3s ease-in
+
+    .profile-name-edit-button
+      position: absolute
+      right: 0
+      padding: 5px
+      transform: translate(100%, 0)
+      opacity: 0
+      display: none
+
+      > span:hover
+        transform: scale(1.3)
+
+    &:hover
+      .profile-name-edit-button
+        transition: all 0.1s ease-in
+        cursor: pointer
+        display: block
+        opacity: 1

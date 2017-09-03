@@ -1,0 +1,28 @@
+.message-item
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  .message-item-avatar
+    min-width: 40px
+
+  .message-item-text
+    margin: 0 15px
+    padding: 8px
+    word-wrap: break-word
+    flex-grow: 1
+    word-break: break-all
+    background-color: rgba(135, 206, 250, 0.2)
+    border-radius: 10px
+    text-indent: 1.5em
+    line-height: 1.3em
+
+    &.align-right
+      align-items: right
+      background-color: rgba(255, 182, 193, 0.2)
+
+  .message-item-timestamp
+    text-align: center
+    color: rgba(0, 0, 0, 0.54)
+    user-select: none
+    font-size: 13px
